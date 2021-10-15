@@ -12,7 +12,6 @@ export default function Home({ students }) {
 
 export const getStaticProps = async () => {
    const { students } = await client.request(GET_ALL_STUDENTS)
-   console.log(students)
    return {
       props: {
          students
